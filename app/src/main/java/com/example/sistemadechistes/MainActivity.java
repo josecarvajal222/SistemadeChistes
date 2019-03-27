@@ -32,7 +32,28 @@ public class MainActivity extends AppCompatActivity {
 
         btnCalificarChiste = (Button)findViewById(R.id.btnCalificarChiste);
 
+        btnCalificarChiste.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, CalificarChisteActivity.class);
+
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
         btnChistesRecomendados = (Button)findViewById(R.id.btnChistesRecomendados);
+
+        btnChistesRecomendados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, ChistesRecomendadosActivity.class);
+
+                MainActivity.this.startActivity(intent);
+
+            }
+        });
 
     }
 }

@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".IngresarChisteActivity" />
+        <activity android:name=".CalificarChisteActivity" />
+        <activity android:name=".ChistesRecomendadosActivity" />
     </application>
 
 </manifest>
