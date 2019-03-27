@@ -15,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnIngresarChiste = (Button)findViewById(R.id.btnIngresarChiste);
+
+        btnCalificarChiste = (Button)findViewById(R.id.btnCalificarChiste);
+
+        btnChistesRecomendados = (Button)findViewById(R.id.btnChistesRecomendados);
 
     }
 }
