@@ -31,6 +31,17 @@
             >
 
             <EditText
+                android:id="@+id/txtTituloChiste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="42dp"
+                android:hint="Titulo Chiste"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <EditText
                 android:id="@+id/txtIngresoChiste"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,6 +92,17 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:hint="Personajes Separados por (,)"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/txtInstrucciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="Instrucciones para contar el chiste"
                 android:inputType="text"
                 android:textAlignment="center"
                 android:textSize="19sp" />
