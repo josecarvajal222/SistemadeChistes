@@ -18,4 +18,64 @@
         android:text="Bienvenido al Módulo de Ingreso de Chistes"
         />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/txtIngresoChiste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="42dp"
+                android:hint="Ingrese Un Chiste"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/txtGradoOportuno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="Grado de Oportunidad"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/txtGradoNovedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="Grado de Novedad (1-10)"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/txtGradoDiversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="Grado de Diversion (1-10)"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>
