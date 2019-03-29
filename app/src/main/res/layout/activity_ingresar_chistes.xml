@@ -113,7 +113,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:text="Subir Infomación"
-                android:id="@+id/ButtonSubirChiste"/>
+                android:id="@+id/ButtonSubirChiste"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
