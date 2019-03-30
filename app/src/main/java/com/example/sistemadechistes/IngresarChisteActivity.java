@@ -2,6 +2,7 @@ package com.example.sistemadechistes;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 
 public class IngresarChisteActivity extends AppCompatActivity {
@@ -14,6 +15,14 @@ public class IngresarChisteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ingresar_chistes);
 
         subirChiste = (Button)findViewById(R.id.ButtonSubirChiste);
+
+        subirChiste.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
 
     }
 
