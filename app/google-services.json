@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "368037194441",
+    "firebase_url": "https://sistemachistes.firebaseio.com",
+    "project_id": "sistemachistes",
+    "storage_bucket": "sistemachistes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368037194441:android:2ee4adae8ce83530",
+        "android_client_info": {
+          "package_name": "com.example.sistemadechistes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368037194441-gv585kfmfj1q3jg2vi6n0gt6hfopjou5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYBn7WjWE8P7q8dvQky49phX0P7L8wkY8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
