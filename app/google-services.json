@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "368037194441-m1toi1c2uq6is8b7ih357cakri9akkul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sistemadechistes",
+            "certificate_hash": "774ed32d03f54bfa1dcd05c0b4ebf4d1282ae71f"
+          }
+        },
+        {
           "client_id": "368037194441-gv585kfmfj1q3jg2vi6n0gt6hfopjou5.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368037194441-gv585kfmfj1q3jg2vi6n0gt6hfopjou5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
