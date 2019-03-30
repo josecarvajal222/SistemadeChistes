@@ -9,7 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -41,7 +44,7 @@ public class IngresarChisteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar_chistes);
 
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         subirChiste = (Button)findViewById(R.id.ButtonSubirChiste);
 
@@ -72,6 +75,21 @@ public class IngresarChisteActivity extends AppCompatActivity {
                 chiste.put("instrucciones",instrucciones.getText().toString());
                 chiste.put("personajes",personajes.getText().toString());
                 chiste.put("titulo",tituloChiste.getText().toString());
+
+                db.collection("Chistes")
+                        .add(chiste)
+                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                            @Override
+                            public void onSuccess(DocumentReference documentReference) {
+                                Log.d("EXITO AGREGANDO", "DocumentSnapshot added with ID: " + documentReference.getId());
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Log.w("ERROR AGREGANDO", "Error adding document", e);
+                            }
+                        });
 
             }
         });
